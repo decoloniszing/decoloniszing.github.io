@@ -188,7 +188,7 @@ body{
 
 .logo-container .logo{
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 25px;
     width: 70px;
     float: left;
 }
@@ -498,7 +498,13 @@ body{
 .header-filter_2::before {
   background-color: #F3F4EE;
 }
+.page-color {
+  background-color: #F3F4EE;
+}
 
+li{
+  margin: 10px 0;
+}
 .header-filter_2 .container {
   z-index: 2;
   position: relative;
@@ -546,7 +552,7 @@ body{
 .navbar.navbar-color {
   background-color: #453F36;
   color: #fff;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 .navbar .navbar-color a:hover {
   color: #000;
@@ -819,15 +825,43 @@ ul.breadcrumb_zing li a:hover {
 }
 
 .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.not-full-width  {
+  background-color: #c2c2c2;
   width: 100%;
+  padding: 20px;
+}
+
+.height-center {
+  padding: 25px 10px;
+  font-family: "IBM Plex Serif" !important;
+  font-size: 16px;
+
+logo.image {
+      display: inline-block;
+  }
+
+}
+.tan {
   background: #453F36;
-  height: 120px;
+  height: 140px;
+}
+.gray {
+  background: #C4C4C4;
+  height: 100px;
 }
 
 .footer_2{
    background: #95372B;
    padding: 30px;
-
+   position: relative;
 }
 
 .footer_2 .footer_menu_2{
@@ -881,4 +915,15 @@ button {
   cursor: pointer;
   width: 44px;
   height: 44px;
+}
+
+.gray-box
+{
+    background-image: url('images/graysquare.png');
+    display: block;
+
+}
+
+ul {
+  list-style: none;
 }

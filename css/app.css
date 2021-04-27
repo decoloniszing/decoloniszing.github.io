@@ -29,7 +29,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: 2.6em;
+    font-size: 2em;
 }
 
 h3,
@@ -5719,9 +5719,9 @@ footer .btn {
         display: none !important;
     }
     .navbar-nav>li {
-        float: none;
+        float: right;
         position: relative;
-        display: block;
+        display: inline-block;
     }
     .sidebar,
     .off-canvas-sidebar {
