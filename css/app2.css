@@ -969,7 +969,8 @@ ul {
         top: 6rem;
         flex-direction: column;
         background-color: #453F36;
-        width: 25%;
+        width: 40%;
+        height: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow:
@@ -981,7 +982,7 @@ ul {
     }
 
     .nav-item {
-        margin: 2rem 0;
+        margin: 0rem 0;
     }
 
     .hamburger {
