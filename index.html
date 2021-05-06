@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
     <meta
       name="description"
       content="Start your development with a Design System for Bootstrap 4, React and Reactstrap."
@@ -48,50 +45,50 @@
   </head>
   <body id="mainpage" class="components-page page-header" style="background-image: url('images/homepage.png');"
 >
-    <nav
-      class="navbar navbar-color navbar-fixed-top navbar-color-on-scroll"
-    >
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <div class="logo-container">
-            <div class="logo">
-              <img src="images/logo.png" alt="DOB logo" />
-             </div>
-              <div class="brand"></div>
-            </div>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="zing.html">The Zing</a>
-            </li>
-            <li>
-              <a href="404-page.html">Dob</a>
-            </li>
-            <li>
-              <a href = '404-page.html'>Narratives</a>
-            </li>
-            <li>
-              <a href = '404-page.html'>Bookstores</a>
-            </li>
-            <li>
-              <a href = '404-page.html'>Calendar</a>
-            </li>
-            <li>
-              <a href="404-page.html">Join</a>
-            </li>
-            <li>
-              <a href = '404-page.html'>Donate</a>
-            </li>
-          </ul>
-        </div>
+<nav class="navbar navbar-color navbar-fixed-top navbar-color-on-scroll">
+  <nav class="navbar-f1">
+    <div class="logo-container">
+      <div class="logo">
+        <a href="index.html" class="nav-logo-f1">
+          <img src="images/logo.png" alt="DOB logo">
+        </a>
       </div>
-    </nav>
+    </div>
+
+      <ul class="nav-menu nav navbar-nav-f1">
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="zing.html" class="nav-link">The Zing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Dob</a>
+        </li>
+        <li class="nav-item">
+          <a href = '#' class="nav-link">Narratives</a>
+        </li>
+        <li class="nav-item">
+          <a href = '#' class="nav-link">Bookstores</a>
+        </li>
+        <li class="nav-item">
+          <a href = '#' class="nav-link">Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a href= "#" class="nav-link">Join</a>
+        </li>
+        <li class="nav-item">
+          <a href = '#' class="nav-link">Donate</a>
+        </li>
+      </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+</nav>
+</nav>
     <div
       class="page-header header-filter">
       <div class="container">
@@ -128,7 +125,7 @@
       <div class="footer_menu_2">
         <div>
           <ul style="list-style: none;">
-            <li><a href="404-page.html">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="404-page.html">Volunteer</a></li>
             <li><a href="404-page.html">Terms</a></li>
             <li><a href="404-page.html">Manifesto</a></li>
@@ -177,4 +174,25 @@
       demo.initDocumentationCharts();
     });
   </script>
+  <script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", mobileMenu);
+
+  function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+  }
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+  }
+
+  </script>
+
 </html>
